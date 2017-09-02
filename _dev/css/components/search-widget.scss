@@ -1,6 +1,6 @@
 .search-widget {
-  float: right;
   @include search-box;
+  width: 100%;
 }
 .header-top {
   .search-widget {
