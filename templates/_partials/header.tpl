@@ -31,20 +31,18 @@
 {block name='header_top'}
   <div class="header-top">
     <div class="row">
-      <div class="col-md-2 col-sm-12 text-center" id="_desktop_logo">
+      <div class="col-md-2 col-sm-12 align-items-center d-flex" id="_desktop_logo">
         <a href="{$urls.base_url}">
           <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
         </a>
       </div>
-      <div class="col-md-8 col-sm-9 position-static d-flex align-items-center">
-      <div class="container">
-        <div class="row">
-          {hook h='displaySearch'}
-          <div class="clearfix"></div>
-        </div>
+      <div class="col-md-8 col-9 position-static d-flex align-items-center">
+        <div class="w-100">
+            {hook h='displaySearch'}
+            <div class="clearfix"></div>
         </div>
       </div>
-      <div class="col-md-2 col-sm-2 d-flex align-items-center">
+      <div class="col-md-2 col-2 d-flex align-items-center">
         {hook h='displayUserLinks'}
       </div>
     </div>
