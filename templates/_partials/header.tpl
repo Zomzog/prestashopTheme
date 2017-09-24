@@ -37,6 +37,11 @@
         </a>
       </div>
       <div class="col-md-10 col-sm-12 d-flex align-items-center">
+        <div class="hidden-md-up float-left">
+          <div class="btn" data-toggle="collapse" data-target="#categories-small" aria-controls="categories-small" aria-expanded="false" aria-label="Toggle categories">
+            <i class="material-icons">menu</i>
+          </div>
+        </div>
           <div class="w-100 d-flex align-items-center">
               {hook h='displaySearch'}
               <div class="clearfix"></div>
@@ -45,41 +50,16 @@
             {hook h='displayUserLinks'}
           </div>
       </div>
-      <div class="hidden-md-up col-1 d-flex align-items-center">
-        <div class="btn" data-toggle="collapse" data-target="#categories" aria-controls="categories" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="material-icons">menu</i>
-        </div>
-      </div>
 
     </div>
   </div>
   {hook h='displayNavFullWidth'}
 {/block}
-
-{block name="pony"}
-  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-  </nav>
-{/block}
 {block name='categroy'}
-  <div class="z-category">
+  <div id="categories" class="hidden-sm-down">
+    {hook h='displayCategories'}
+  </div>
+  <div class="hidden-md-up collapse" id="categories-small">
     {hook h='displayCategories'}
   </div>
 {/block}
