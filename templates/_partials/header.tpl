@@ -36,20 +36,21 @@
           <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
         </a>
       </div>
+      <div class="col-md-10 col-sm-12 d-flex align-items-center">
+          <div class="w-100 d-flex align-items-center">
+              {hook h='displaySearch'}
+              <div class="clearfix"></div>
+          </div>
+          <div class=" float-right d-flex align-items-center">
+            {hook h='displayUserLinks'}
+          </div>
+      </div>
       <div class="hidden-md-up col-1 d-flex align-items-center">
         <div class="btn" data-toggle="collapse" data-target="#categories" aria-controls="categories" aria-expanded="false" aria-label="Toggle navigation">
           <i class="material-icons">menu</i>
         </div>
       </div>
-      <div class="col-md-8 col-9 position-static d-flex align-items-center">
-        <div class="w-100">
-            {hook h='displaySearch'}
-            <div class="clearfix"></div>
-        </div>
-      </div>
-      <div class="col-md-2 col-2 d-flex align-items-center">
-        {hook h='displayUserLinks'}
-      </div>
+
     </div>
   </div>
   {hook h='displayNavFullWidth'}
