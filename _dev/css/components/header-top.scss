@@ -1,4 +1,4 @@
-
+$icon-size: 28px;
   .header-top {
     border-bottom: $gray-light 2px solid;
     
@@ -26,6 +26,13 @@
 .user-info {
   .account {
     margin-left: $small-space;
+  }
+  &.btn {
+    padding-right: 0;
+  }
+
+  .icon {
+    font-size: $icon-size;
   }
 
   .logged {
