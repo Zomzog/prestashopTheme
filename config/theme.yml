@@ -55,7 +55,7 @@ global_settings:
      - ps_linklist
   hooks:
     modules_to_hook:
-      displayCategory:
+      displayCategories:
         - ps_mainmenu
       displaySearch:
         - ps_searchbar
@@ -87,6 +87,9 @@ global_settings:
         - ps_featuredproducts
       displayCrossSellingShoppingCart:
         - ps_featuredproducts
+      displaySidebarCategory:
+        - ps_mainmenu
+
 
   image_types:
     cart_default:

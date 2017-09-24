@@ -42,6 +42,12 @@
         {include file='catalog/_partials/product-activation.tpl'}
       {/block}
 
+      <nav id="sidebar" class="collapse">
+        {block name='sidebar'}
+          {include file='_partials/sidebar.tpl'}
+        {/block}
+      </nav>
+
       <header id="header">
         {block name='header'}
           {include file='_partials/header.tpl'}
