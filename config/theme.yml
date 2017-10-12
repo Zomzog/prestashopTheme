@@ -69,11 +69,12 @@ global_settings:
         - ps_customtext
       displayFooterBefore:
         - ps_emailsubscription
+      displayContactFooter:
+        - ps_contactinfo
         - ps_socialfollow
       displayFooter:
         - ps_linklist
         - ps_customeraccountlinks
-        - ps_contactinfo
       displayLeftColumn:
         - ps_categorytree
         - ps_facetedsearch

@@ -35,6 +35,11 @@
       {block name='hook_footer'}
         {hook h='displayFooter'}
       {/block}
+      <div class="block-information">
+        {block name='contact_footer'}
+          {hook h='displayContactFooter'}
+        {/block}
+      </div>
     </div>
     <div class="row">
       {block name='hook_footer_after'}

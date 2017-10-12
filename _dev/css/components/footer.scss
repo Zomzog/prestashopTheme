@@ -24,9 +24,12 @@
   }
   margin-bottom: 0.625rem;
 }
-.block-contact {
+.block-information {
   border-left: $gray-light 2px solid;
   padding-left: 3rem;
+}
+
+.block-contact {
   color: $gray;
   .block-contact-title{
     color:$gray-darker;
@@ -51,7 +54,7 @@
   font-size: $base-font-size;
 }
 .block-social {
-  text-align: right;
+  text-align: left;
 }
 .block-social li {
   height: 2.5rem;
@@ -229,7 +232,7 @@
   .block-social {
     text-align: center;
   }
-  .block-contact {
+  .block-information  {
     padding-left: 1.5rem;
   }
 }
