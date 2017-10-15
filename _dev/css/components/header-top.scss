@@ -21,7 +21,7 @@ $icon-size: 28px;
       color: $gray;
       text-transform: uppercase;
     }
-  }
+}
 
 .user-info {
   .account {
@@ -36,7 +36,7 @@ $icon-size: 28px;
   }
 
   .logged {
-    color: $brand-primary;
+    color: $gray-darker;
   }
 }
 

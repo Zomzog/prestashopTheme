@@ -41,7 +41,12 @@
     color: $gray-darker;
     &:hover {
       text-decoration: none;
-      color: $brand-primary;
+      color: $gray-darker;
+    }
+    &.btn {
+      &:focus {
+        box-shadow: none;
+      }
     }
   }
   .header-nav {
