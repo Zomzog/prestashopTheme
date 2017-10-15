@@ -351,18 +351,6 @@ body#checkout {
   }
 }
 /**** ORDER CONFIRMATION *****/
-#order-details {
-  padding-left: $large-space;
-  > .card-title {
-    margin-bottom: $large-space;
-  }
-  ul {
-    margin-bottom: $medium-space;
-    li {
-      margin-bottom: $small-space;
-    }
-  }
-}
 #order-items {
   border-right: $gray-light 1px solid;
   hr {
