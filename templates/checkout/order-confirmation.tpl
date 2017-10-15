@@ -38,7 +38,7 @@
 {/block}
 
 {block name='page_content_container'}
-  <section id="content" class="page-content page-order-confirmation card">
+  <section id="content" class="page-order-confirmation card">
     <div class="card-block">
       <div class="row">
 
@@ -53,25 +53,34 @@
           }
         {/block}
 
-        {block name='order_details'}
-          <div id="order-details" class="col-md-4">
-            <h3 class="h3 card-title">{l s='Order details' d='Shop.Theme.Checkout'}:</h3>
-            <ul>
-              <li>{l s='Order reference: %reference%' d='Shop.Theme.Checkout' sprintf=['%reference%' => $order.details.reference]}</li>
-              <li>{l s='Payment method: %method%' d='Shop.Theme.Checkout' sprintf=['%method%' => $order.details.payment]}</li>
-              {if !$order.details.is_virtual}
-                <li>
-                  {l s='Shipping method: %method%' d='Shop.Theme.Checkout' sprintf=['%method%' => $order.carrier.name]}<br>
-                  <em>{$order.carrier.delay}</em>
-                </li>
-              {/if}
-            </ul>
-          </div>
-        {/block}
 
       </div>
     </div>
   </section>
+
+  {block name='order_details'}
+  <section class="page-content card">
+    <div id="order-details" class="card-block">
+      <h3 class="h3 card-title">{l s='Order details' d='Shop.Theme.Checkout'}:</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td>{l s='Order reference: %reference%' d='Shop.Theme.Checkout' sprintf=['%reference%' => $order.details.reference]}</td>
+          </tr>
+          <tr>
+            <td>{l s='Payment method: %method%' d='Shop.Theme.Checkout' sprintf=['%method%' => $order.details.payment]}</td>
+          </tr>
+            {if !$order.details.is_virtual}
+              <tr>
+                <td>{l s='Shipping method: %method%' d='Shop.Theme.Checkout' sprintf=['%method%' => $order.carrier.name]}
+                <em>{$order.carrier.delay}</em></td>
+              </tr>
+            {/if}
+        </tbody>
+      </table>
+    </div>
+  </section>
+  {/block}
 
   {block name='hook_payment_return'}
     {if ! empty($HOOK_PAYMENT_RETURN)}
