@@ -38,7 +38,7 @@
       </div>
       <div class="col-md-10 col-sm-12 d-flex align-items-center">
         <div class="hidden-md-up float-left">
-          <a class="btn" data-toggle="collapse" data-target="#categories-small" aria-controls="categories-small" aria-expanded="false" aria-label="Toggle categories">
+          <a class="btn" data-toggle="collapse" href="#categories-small" aria-controls="categories-small" aria-expanded="false" aria-label="Toggle categories">
             <i class="material-icons">menu</i>
           </a>
         </div>
