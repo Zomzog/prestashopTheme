@@ -125,7 +125,7 @@
   {/if}
 
   {block name='addresses'}
-    <div class="addresses">
+    <div class="row addresses">
       {if $order.addresses.delivery}
         <div class="col-lg-6 col-md-6 col-sm-6">
           <article id="delivery-address" class="box">
